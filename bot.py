@@ -1,4 +1,9 @@
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perception_tagger')
+nltk.download('vader_lexicon')
 from nltk.tokenize import word_tokenize as wt
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as sia
 from nltk.stem import WordNetLemmatizer 

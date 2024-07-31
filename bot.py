@@ -4,6 +4,9 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perception_tagger')
 nltk.download('vader_lexicon')
+nltk.download('averaged_perceptron_tagger')
+import os
+from time import sleep
 from nltk.tokenize import word_tokenize as wt
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as sia
 from nltk.stem import WordNetLemmatizer 
@@ -14,6 +17,8 @@ import pandas as pd
 import webbrowser
 import colorama 
 from colorama import Fore, Style
+os.system('cls' if os.name=='nt' else 'clear')
+sleep(2)
 print(Fore.GREEN+"""
 _ _ _ ____ _    ____ ____ _  _ ____    ___ ____    ____ ____ ____ ____    ____ ____ ____ ____ ____ _  _ _ _  _ ____    ____ ____ ____    _  _ _ ___  ____ 
 | | | |___ |    |    |  | |\/| |___     |  |  |    [__  |__| |___ |___    [__  |___ |__| |__/ |    |__| | |\ | | __    |___ |  | |__/    |_/  | |  \ [__  
